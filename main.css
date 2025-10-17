@@ -1,0 +1,80 @@
+body {
+ -webkit-print-color-adjust: exact !important ;
+}
+
+@media print {
+
+    @page {
+        margin: 0;
+    }
+
+    body {
+        zoom: 50%; /* Reduz tudo proporcionalmente */
+    }
+
+    #menu{
+        height: 5% !important;
+    }
+    
+    .ocultar{
+        display: none;
+    }
+
+    #conteudo{
+        height: initial !important;
+    }
+ 
+    #registros, #conteudo{
+        overflow-y: initial;
+        overflow-x: initial;
+    }
+    
+    #filtros, #menu, #total_de_resultados{
+        display: none;
+    }
+    
+    #registros{
+        width: 98%;
+        height: auto;
+    }
+    
+    #cabecalho{
+        width: 98%;
+    }
+    
+    /*
+    .register{
+        display: block;
+        background: white;
+        margin-bottom: 50rem;
+    }
+    
+    .atributo_legenda{
+        height: 2rem;
+        width: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        color: white;
+        float: left;
+        margin: 0.1rem 0;
+    }
+    
+    .atributo_valor{
+        height: 2rem;
+        padding-left: 1%;
+        width: 77%;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 0.8rem;
+        float: left;
+        background: #f5f5f5;
+        margin: 0.1rem 0;
+    }
+    */
+
+}
